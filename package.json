@@ -1,0 +1,54 @@
+{
+  "name": "stub-package",
+  "description": "{{ package_description }}",
+  "version": "0.1.0",
+  "private": false,
+  "main": "dist/StubPackage.umd.js",
+  "browser": "dist/StubPackage.common.js",
+  "unpkg": "dist/StubPackage.umd.min.js",
+  "jsDelivr": "dist/StubPackage.umd.min.js",
+  "bugs": {
+    "url": "https://github.com/stub-vendor/stub-package/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stub-vendor/stub-package.git"
+  },
+  "keywords": [
+    "stub-package",
+    "stub-vendor",
+    "author_name"
+  ],
+  "author": "{{ author_name }}",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve ./demo/main",
+    "build:demo": "vue-cli-service --mode development build --dest ./dist/demo ./demo/main",
+    "build": "vue-cli-service build --target lib --name StubPackage src/index.js",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.22"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "lodash": "^4.17.14",
+    "papaparse": "^5.0.0",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.2",
+    "@vue/cli-plugin-unit-jest": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
