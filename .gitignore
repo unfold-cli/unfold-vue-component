@@ -1,5 +1,6 @@
 .DS_Store
 /stub-package/dist
+/sandbox
 node_modules
 
 # Log files

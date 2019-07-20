@@ -1,6 +1,6 @@
 <template>
     <div class="stub-package-component">
-        {{msg}}
+        \{{msg}}
     </div>
 </template>
 
