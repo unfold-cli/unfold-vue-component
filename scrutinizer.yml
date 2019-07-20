@@ -1,0 +1,15 @@
+filter:
+  excluded_paths: ["tests/*"]
+
+checks:
+  javascript:
+    no_var: true
+    no_loop_var_assign: true
+    no_else_return: true
+
+build:
+  nodes:
+    analysis:
+      tests:
+        override:
+          - js-scrutinizer-run
