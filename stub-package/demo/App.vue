@@ -1,16 +1,11 @@
 <template>
     <div id="app">
         <img alt="Vue logo" src="./assets/logo.png">
-        <StubPackagePlugin msg="Welcome to Your Vue.js Component"/>
+        <stub-package msg="Welcome to Your Vue.js Component"></stub-package>
     </div>
 </template>
 
 <script>
-    import Vue from 'vue';
-    import { StubPackagePlugin } from "../src/";
-
-    Vue.use(StubPackagePlugin);
-
     export default {
         name: 'app',
     };
