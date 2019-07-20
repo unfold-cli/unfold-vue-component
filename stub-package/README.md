@@ -9,6 +9,10 @@ npm install
 ```
 npm run serve
 ```
+### Compiles demo
+```
+npm run build:demo
+```
 
 ### Compiles and minifies for production
 ```

@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'laravel-module',
+    name: 'vue-component',
     variables() {
         return [
             'author_name',
@@ -17,33 +17,12 @@ module.exports = {
             { type: 'input', name: 'author_email', message: "What's your email?" },
             { type: 'input', name: 'vendor_name', message: "What's your vendor name (e.g. Great Company)?" },
             { type: 'input', name: 'package_name', message: "What's your package name (e.g. The Great Package)?" },
-            { type: 'input', name: 'resource_name', message: "What's your resource (model) name?" },
             { type: 'input', name: 'package_description', message: "What's your package description??" },
         ];
     },
     replacements: [
-        // model
-        { replace: "stub-model", with: '{{kebab_case resource_name}}' },
-        { replace: "stub-models", with: '{{pluralize kebab_case resource_name }}' },
-        { replace: "stub_model", with: '{{snake_case resource_name}}' },
-        { replace: "stub_models", with: '{{pluralize snake_case resource_name }}' },
-        { replace: "StubModel", with: '{{studly_case resource_name}}' },
-        { replace: "StubModels", with: '{{pluralize studly_case resource_name }}' },
-        { replace: "stubModel", with: '{{camel_case resource_name }}' },
-        { replace: "stubModels", with: '{{pluralize camel_case resource_name }}' },
-        { replace: "Stub Model", with: '{{title_case resource_name }}' },
-        { replace: "Stub Models", with: '{{pluralize title_case resource_name }}' },
-
-        // package
         { replace: "stub-package", with: '{{kebab_case package_name}}' },
-        { replace: "stub-packages", with: '{{pluralize kebab_case package_name }}' },
-        { replace: "stub_package", with: '{{snake_case package_name}}' },
-        { replace: "stub_packages", with: '{{pluralize snake_case package_name }}' },
         { replace: "StubPackage", with: '{{studly_case package_name}}' },
-        { replace: "StubPackages", with: '{{pluralize studly_case package_name }}' },
-
-        // vendor
         { replace: "stub-vendor", with: '{{kebab_case vendor_name}}' },
-        { replace: "StubVendor", with: '{{studly_case vendor_name}}' },
     ]
 };
